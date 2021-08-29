@@ -6,8 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz Time!</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Azeret+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="high-score.html">High Scores</a>
+        </nav>
+        <div class="title-words">Code Quiz</div>
+        <h4>10 Questions in 60 Seconds!</h4>
+        <section id="button-box">
+            <button class="start-button">START!</button>
+        </section>
+    </header>
+
+    <main class="main-container">
+        <section>
+            <div class="quiz-items">
+                <div id="question">
+                    <h2>Question Here</h2>
+                </div>
+                <div id="answers">
+                    Answer Buttons Here
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="right-wrong-card">
+                <div class="timer-card">
+                    <div class="timer-text">
+                        <div id="timer-count"></div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Correct:<span class="correct">0</span></h3>
+                    <h3>Incorrect:<span class="wrong">0</span></h3>
+                </div>
+            </div>
+        </section>
+        
+    </main>
 
     <script src="./assets/js/script.js"></script>
 </body>

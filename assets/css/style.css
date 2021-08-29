@@ -1,0 +1,43 @@
+:root {
+    --primary: blue; 
+    --secondary: red;
+    --accent: orange;
+    --background: grey;
+}
+
+body {
+    font-family: 'Abel', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.title-words {
+    text-align: center;
+    font-family: 'Azeret Mono', monospace;
+    font-size: 3em;
+}
+
+h4 {
+    text-align: center;
+    margin: 0;
+}
+
+#button-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.start-button {
+    margin: 10px;
+    max-width: 200px;
+    max-height: 125px;
+}
+
+.timer-text {
+    font-size: x-large;
+}
