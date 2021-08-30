@@ -15,11 +15,11 @@ nav {
 }
 
 a {
-    color: var(--primary);
+    color: var(--accent);
 }
 
 a:hover {
-    color: var(--accent);
+    color: var(--primary);
     text-decoration: underline overline;
 }
 
