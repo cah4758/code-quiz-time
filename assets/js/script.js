@@ -38,18 +38,26 @@ var questionsArr = [
       ],
       correctAnswer: "camelCase",
     },
-      { question: "question 4",
+      { question: "What type of name is used to reference only one element?",
       answers: [
-        "dan",
-        "dap",
-        "dab",
+        "ID",
+        "Class",
+        "Pseudo Class",
       ],
-      correctAnswer: "dan",
+      correctAnswer: "ID",
+    },
+    { question: "What type of name is used to reference a group of elements?",
+      answers: [
+        "ID",
+        "Class",
+        "Pseudo Element",
+      ],
+      correctAnswer: "Class",
     }
 ];
 
 function startGame() {
-  timerCount = 10;
+  timerCount = 15;
   
   console.log("go!");
   var interval = setInterval(function(){
