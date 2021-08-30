@@ -1,26 +1,36 @@
 :root {
-    --primary: blue; 
-    --secondary: red;
-    --accent: orange;
-    --background: grey;
+    --primary: #FF2442; 
+    --secondary: #3DB2FF;
+    --accent: #FFB830;
+    --background: rgb(102, 97, 97);
 }
 
 body {
     font-family: 'Abel', sans-serif;
+    background-color: var(--background);
 }
 
-.main-container {
-    display: flex;
-    justify-content: space-evenly;
+nav {
+    margin: 0;
+}
+
+a {
+    color: var(--primary);
+}
+
+a:hover {
+    color: var(--accent);
+    text-decoration: underline overline;
 }
 
 .title-words {
     text-align: center;
+    background-color: var(--secondary);
     font-family: 'Azeret Mono', monospace;
     font-size: 3em;
 }
 
-h4 {
+h3 {
     text-align: center;
     margin: 0;
 }
@@ -38,6 +48,62 @@ h4 {
     max-height: 125px;
 }
 
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+}
+
+.right-wrong-card div {
+    text-align: center;
+    margin-top: 15px;
+}
+
 .timer-text {
+    text-align: center;
     font-size: x-large;
+}
+
+#answers button{
+    background-color: var(--secondary);
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.scoreboard {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+
+.scoreboard h2{
+    text-decoration: underline;
+}
+
+.names-col {
+    max-width: 70%;
+}
+
+.scores-col {
+    max-width: 30%;
+}
+
+@media screen and (min-width: 768px){
+    .main-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .quiz-items {
+        margin-left: 50px;
+        min-width: 65%;
+    }
+    .right-wrong-card {
+        margin-right: 50px;
+        min-width: 30%;
+    }
 }
